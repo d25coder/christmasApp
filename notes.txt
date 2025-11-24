@@ -6,7 +6,7 @@ SELECT program.title, actor.fName, actor.LName, program.yr_released
 FROM program 
 JOIN actor ON program.actor_id = actor.actor_id;  
 
- // Drop a tale 
+ // Drop a table 
  DROP TABLE program_to_actor;
  DROP TABLE program_to_director;
  DROP TABLE program_to_streaming_platform;

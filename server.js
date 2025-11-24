@@ -1,6 +1,7 @@
 // Build Server
 const express = require('express')
 const server = express()
+const router = require('./routes/router') // imports our router file
 const PORT = process.env.PORT || 5554
 
 
@@ -23,7 +24,7 @@ server.use(cors())
 server.use(express.json()) //refers to pkg.json start/dev to run server.js file, everything runs here
 server.use(express.urlencoded({ extended: true})) 
 
-
-
+// localhost:5554
+server.use('/', router) //points to router file 
 
 server.listen(PORT, ()=> console.log(`Jesus is the reason for the season!`)) 

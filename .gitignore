@@ -1,3 +1,4 @@
 node_modules/
 *-lock.json
-conconfig/dbconfig.json 
+# gitignore hides the config folder
+conconfig/ 
