@@ -247,64 +247,138 @@ INSERT INTO program
 (title, yr_released, runtime, production_id, format, program_rating, rating, img, description)
 VALUES
 ("mickey's christmans carol", '1963', '00:00:26', 1, 'animation', 'G', 8, "mickey's christmas carol.jpg", 'The classic Disney animated characters play the roles in this animated retelling of the Charles Dickens masterpiece.'),
-
 ("yogi's first christmas", '1980', '00:01:38', 2, 'animation', 'TV-G', 7, "yogi's first christmas.jpg", "Yogi, Boo Boo and Cindy are awakened from hibernation and join their friends' Christmas activities while interfering with two villains' efforts to ruin the holiday."),
-
 ('frosty the snowman', '1969', '00:00:25', 3, 'animation', 'TV-G', 7, 'frosty the snowman.jpg', "A living snowman and a little girl struggle to elude a greedy magician who is after the snowman's magic hat."),
-
 ('a charlie brown christmas', '1965', '00:00:25', 4, 'animation', 'TV-G', 8, 'a charlie brown christmas.jpg', 'Depressed at the commercialism he sees around him, Charlie Brown tries to find a deeper meaning to Christmas.'),
-
 ('grandma got run over by a reindeer', '2000', '00:00:51', 5, 'animation', 'TV-G', 4, 'grandma got run over by a reindeer.jpg', 'A young boy sets out to find his missing grandmother and prove that Santa Claus is real.'),
-
 ('the christmas toy', '1986', '00:00:50', 6, 'stop motion', 'TV-G', 7, 'the christmas toy.jpg', "The toys in the playroom of the Jones household magically come to life when their owners aren't looking. On Christmas Eve, as the toys eagerly await the arrival of a new toy, Rugby the tiger plots to make sure he remains the favorite toy."),
-
 ('the polar express', '2004', '00:01:40', 7, 'animation', 'TV-G', 6, 'the polar express.jpg', 'On Christmas Eve, a young boy embarks on a magical adventure to the North Pole on the Polar Express, while learning about friendship, bravery, and the spirit of Christmas.'),
-
 ('jingle jangle: a christmas journey', '2020', '00:02:02', 8, 'stop motion', 'PG', 6, 'jingle jangle a christmas journey.jpg', 'An imaginary world comes to life in a holiday tale of an eccentric toymaker, his adventurous granddaughter, and a magical invention that has the power to change their lives forever.'),
-
 ('bad santa', '2003', '00:01:43', 9, 'stop motion', 'R', 7, 'bad santa.jpg', 'A miserable conman and his partner pose as Santa and his Little Helper to rob department stores on Christmas Eve. But they run into problems when the conman befriends a troubled kid.'),
-
 ("it's a very merry muppet christmas movie", '2002', '00:01:40', 10, 'stop motion', 'TV-G', 5, "it's a very merry muppet christmas movie.jpg", 'Bank owner Miss Bitterman plots to seize the Muppet Theatre and turn it into a nightclub. She tricks Pepe into handing over the only copy of the original contract, then alters it so the Muppets have little time to repay their debt. While rushing to stage a Christmas show, the troupe makes sacrifices and raises the money needed to save their theater.'),
-
 ('the christmas chronicles', '2018', '00:01:44', 11, 'stop motion', 'PG', 7, 'the christmas chronicles.jpg', 'The story of sister and brother, Kate and Teddy Pierce, whose Christmas Eve plan to catch Santa Claus on camera turns into an unexpected journey that most kids could only dream about.'),
-
 ('snowglobe', '2007', '00:01:30', 12, 'stop motion', 'TV-PG', 5, 'snowglobe.jpg', 'A young woman discovers a Christmas-themed dreamworld inside a magical snowglobe.'),
-
 ('almost christmes', '2016', '00:01:51', 13, 'stop motion', 'PG-13', 6, 'almost christmas.jpg', 'A dysfunctional family gathers for their first Christmas since their mother died.'),
-
 ('a christmas prince', '2017', '00:01:32', 14, 'live action', 'TV-PG', 5, 'a christmas prince.jpg', 'When a reporter goes undercover as a tutor to get the inside scoop on a playboy prince, she gets tangled in some royal intrigue and ends up finding love - but will she be able to keep up her lie?'),
-
 ('merry liddle christmas', '2019', '00:01:27', 15, 'live action', 'TV-G', 5, 'merry liddle christmas.jpg', 'A woman trying to get her dysfunctional family to look picture-perfect for the holidays falls in love with her neighbor amid the chaos.'),
-
 ('black nativity', '2013', '00:01:33', 16, 'live action', 'PG', 4, 'black nativity.jpg', 'A street-wise teen from Baltimore who has been raised by a single mother travels to New York City to spend the Christmas holiday with his estranged relatives, where he embarks on a surprising and inspirational journey.'),
-
 ('last holiday', '2006', '00:01:52', 17, 'live action', 'PG-13', 6, 'last holiday.jpg', 'Georgia, who leads a life full of unfulfilled desires, is left shocked when she discovers her terminal illness. Soon, she quits her job, gathers her savings and sets out on a luxurious trip to Europe.'),
-
 ('holiday heart', '2000', '00:01:36', 18, NULL, 'R', 7, 'holiday heart.jpg', 'A drag queen takes in a drug addict and her daughter and helps raise the daughter.'),
-
 ('christmas everlasting', '2018', '00:01:25', 19, NULL, 'TV-PG', 6, 'christmas everlasting.jpg', 'A hotshot lawyer returns to her childhood home following a death in the family.'),
-
 ('miracle in motor city', '2021', '00:01:27', 20, 'live action', 'TV-PG', 5, 'miracle in motor city.jpg', 'Amber finds herself in trouble when she promises to create the Christmas Pageant no one will forget, with the special appearance of Motown Legend Smokey Robinson. Eddie and her will go to great extent reconnecting to make it happen.'),
-
 ('holiday rush', '2019', '00:01:32', 21, 'live action', 'TV-PG', 5, 'holiday rush.jpg', 'After his sudden firing, a popular radio DJ moves in with his aunt, bringing along his four spoiled children, and a plan to return to the airwaves.'),
-
 ('a naija christmas', '2021', '00:02:01', 22, NULL, 'TV-14', 5, 'a naija christmas.jpg', "A mother's Christmas wish - and the grand prize that comes with it - sets off a fierce competition between her sons."),
-
 ('black santa white christmas', '2014', '00:00:22', 23, 'live action', 'TV-PG', 7, 'black santa white christmas.jpg', "Certain that his annual office Christmas party needs a black Santa, Dre goes out of his way to fill the red suit, even though the head of HR already got the job. Meanwhile, Bow doesn't feel like competing with Ruby over who cooks the big holiday dinner."),
-
 ('a very merry beauty salon', '2024', '00:01:27', 24, 'live action', 'TV-PG', 6, 'a very merry beauty salon.jpg', "Sienna is preparing for Atlanta's Tinsel Ball, where she will be honored for her charitable work. The annual event takes a glamourous turn with the arrival of Lawrence, whose family's wine brand is now co-sponsoring the Ball."),
-
 ('the ultimate christmas present', '2000', '00:01:25', 25, 'live action', 'TV-G', 5, 'the ultimate christmas present.jpg', 'A girl steals a weather machine from Santa Claus to make a snow day; the machine breaks and causes an out-of-control snowstorm.'),
-
 ('aisle be home for christmas', '2022', '00:01:25', 26, 'animation', 'TV-PG', 5, 'aisle be home for christmas.jpg', 'Two exes finally reconnect when a snowstorm leaves them stranded in a superstore without mobile service or Wi-Fi just before Christmas.'),
-
 ("national lampoon's christmas vacation", '1989', '00:01:37', 27, 'live action', 'PG-13', 7, "national lampoon's christmas vacation.jpg", "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."),
-
 ('snowbound for christmas', '2019', '00:01:24', 28, 'live action', 'PG', 5, 'snowbound for christmas.jpg', 'Marketing exec lands a spot on a big project but before the presentation, a snowstorm traps her and her boss at a resort where they realize there is more to their relationship than just business.'),
-
 ('miracle on 34th street', '1994', '00:01:54', 29, 'live action', 'PG', 6, 'miracle of 34th street.jpg', 'A lawyer and a little girl must prove that a man claiming to be Santa Claus is the real thing.'),
-
 ('a bad moms christmas', '2017', '00:01:44', 30, 'live action', 'R', 5, 'a bad moms christmas.jpg', 'As their own mothers drop in unexpectedly, our three under-appreciated and over-burdened moms rebel against the challenges and expectations of the Super Bowl for mothers: Christmas.');
-
-
  
+
+-- INSERT PIVOT TABLES
+-- connect tables to use data from multiple tables 
+INSERT INTO program_to_actor
+(program_id, actor_id)
+VALUES
+(1, 1), (1, 2), (1, 3), (1, 4), (1, 5),
+(2, 6), (2, 7), (2, 8), (2, 9), (2, 10),
+(3, 11), (3, 12), (3, 13), (3, 14), (3, 15),
+(4, 16), (4, 17), (4, 18), (4, 19), (4, 20),
+(5, 21), (5, 22), (5, 23), (5, 24), (5, 25),
+(6, 26), (6, 27), (6, 28), (6, 29), (6, 30),
+(7, 31), (7, 32), (7, 33), (7, 34), (7, 35),
+(8, 36), (8, 37), (8, 38), (8, 39), (8, 40),
+(9, 41), (9, 42), (9, 43), (9, 44), (9, 45),
+(10, 27), (10, 26), (10, 46), (10, 47), (10, 48),
+(11, 49), (11, 50), (11, 51), (11, 52), (11, 53),
+(12, 54), (12, 55), (12, 56), (12, 57), (12, 58),
+(13, 59), (13, 60), (13, 61), (13, 62), (13, 63),
+(14, 64), (14, 65), (14, 66), (14, 67), (14, 68),
+(15, 69), (15, 70), (15, 71), (15, 72), (15, 73),
+(16, 36), (16, 74), (16, 75), (16, 76), (16, 77),
+(17, 78), (17, 79), (17, 80), (17, 81), (17, 82),
+(18, 83), (18, 84), (18, 85), (18, 86), (18, 87),
+(19, 88), (19, 89), (19, 90), (19, 91), (19, 92),
+(20, 93), (20, 94), (20, 95), (20, 96), (20, 97),
+(21, 63), (21, 98), (21, 99), (21, 100), (21, 101),
+(22, 102), (22, 103), (22, 104), (22, 105), (22, 106),
+(23, 107), (23, 108), (23, 109), (23, 110), (23, 111),
+(24, 93), (24, 112), (24, 113), (24, 114), (24, 115),
+(25, 116), (25, 117), (25, 118), (25, 119), (25, 120),
+(26, 121), (26, 122), (26, 123), (26, 124), (26, 125),
+(27, 126), (27, 127), (27, 128), (27, 129), (27, 130),
+(28, 131), (28, 132),(28, 133), (28, 134), (28, 135),
+(29, 136), (29, 137), (29, 138), (29, 139), (29, 140),
+(30, 141), (30, 142), (30, 143);
+
+INSERT INTO program_to_director
+(program_id, director_id)
+VALUES
+(1, 1), (1, 2),
+(2, 3), (2, 4), (2, 5),
+(3, 6), (3, 7),
+(4, 8),
+(5, 9),
+(6, 10),
+(7, 11),
+(8, 12),
+(9, 13),
+(10, 14),
+(11, 15),
+(12, 16),
+(13, 12),
+(14, 17),
+(15, 18),
+(16, 19), 
+(17, 20),
+(18, 21),
+(19, 22),
+(20, 23),
+(21, 24),
+(22, 25),
+(23, 26),
+(24, 27),
+(25, 28),
+(26, 29),
+(27, 30),
+(28, 31),
+(29, 32),
+(30, 33), (30, 34);
+
+INSERT INTO program_to_streaming_platform 
+(program_id, streamplat_id)
+VALUES 
+(1, 1), (1, 2), (1, 3),
+(2, 2), (2, 3),
+(3, 1), (3, 4), (3, 6), (3, 2), (3, 3),
+(4, 3), (4, 12),
+(5, 2), (5, 3), 
+(6, 2), (6, 3), (6, 13),
+(7, 2), (7, 11),
+(8, 5),
+(9, 1), (9, 2), (9, 3), (9, 11),
+(10, 2), (10, 3), 
+(11, 5),
+(12, 2),(12, 3),
+(13, 2), (13, 4), (13, 6), (13, 11),
+(14, 5),
+(15, 2), (15, 5), (15, 10), (15, 14),
+(16, 2), (16, 10),
+(17, 2), (17, 3), (17, 4), (17, 8), (17, 13),
+(18, 3), (18, 10), (18, 13),
+(19, 2), (19, 7), (19, 15), (19, 13),
+(20, 2),
+(21, 5),
+(22, 5),
+(23, 1), (23, 2), (23, 4),
+(24, 1), (24, 2), (24, 14),
+(25, 1), (25, 2), (25, 4),
+(26, 2), (26, 15),
+(27, 1), (27, 2), (27, 3), (27, 9), (27, 11),
+(28, 2), (28, 10), (28, 13), (28, 15),
+(29, 1), (29, 3), (29, 4), (29, 13), (29, 7),
+(30, 2), (30, 3);
+

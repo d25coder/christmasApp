@@ -1,0 +1,21 @@
+// misspelled column name in actor table
+ALTER TABLE actor
+CHANGE LName lName VARCHAR(40);
+
+SELECT program.title, actor.fName, actor.LName, program.yr_released
+FROM program 
+JOIN actor ON program.actor_id = actor.actor_id;  
+
+ // Drop a tale 
+ DROP TABLE program_to_actor;
+ DROP TABLE program_to_director;
+ DROP TABLE program_to_streaming_platform;
+
+
+// Fix FOREIGN KEY in schema.sql
+  Cannot add or update a child row: a foreign key constraint fails (`christmasapi`.`program_to_actor`, CONSTRAINT `fk_actor_to_prog` FOREIGN KEY (`actor_id`) REFERENCES `acto
+r` (`actor_id`))
+-this means that the number of actors or programs are not the same
+-i had 145 actors in data.sql, it needs to be 143.
+
+
