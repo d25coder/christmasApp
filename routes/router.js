@@ -5,13 +5,17 @@ const PORT = process.env.PORT || 5554
 
 // create a root route
 //takes us to the api page
-// localhost:5554/api
+// http://localhost:5554/api
 router.get('/api', (req, res)=> {
     // res.send('program api') // received program api on the browser
     res.json({
-        'All Actors': `http://localhost:${PORT}/api/actors`  //endpoint for all actors
+        'All Actors': `http://localhost:${PORT}/api/actors`   
+
     })
 })
+router.use('/api/actors', require('./api/actorRoutes'))
+
+
 
 
 // ERROR HANDLER ROUTE
