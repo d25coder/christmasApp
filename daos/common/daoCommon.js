@@ -9,7 +9,7 @@ const { queryAction } = require('../../helpers/queryAction')
 
 
 
-// Q1. Find All - access all the data from the database, 
+ 
 const daoCommon = {
 // create methods that will query the database
 

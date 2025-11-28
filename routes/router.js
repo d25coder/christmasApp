@@ -8,12 +8,16 @@ const PORT = process.env.PORT || 5554
 // http://localhost:5554/api
 router.get('/api', (req, res)=> {
     // res.send('program api') // received program api on the browser
-    res.json({
-        'All Actors': `http://localhost:${PORT}/api/actors`   
+    res.json({    //endpoints for each specific data
+        'All Actors': `http://localhost:${PORT}/api/actors`,
+        'All Directors': `http://localhost:${PORT}/api/directors`,
+        'All Programs': `http://localhost:${PORT}/api/programs`    
 
     })
 })
 router.use('/api/actors', require('./api/actorRoutes'))
+router.use('/api/director', require('./api/directorRoutes')) 
+router.use('/api/programs', require('./api/programRoutes'))
 
 
 
