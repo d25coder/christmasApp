@@ -10,14 +10,15 @@ router.get('/api', (req, res)=> {
     // res.send('program api') // received program api on the browser
     res.json({    //endpoints for each specific data
         'All Actors': `http://localhost:${PORT}/api/actors`,
-        'All Directors': `http://localhost:${PORT}/api/directors`,
-        'All Programs': `http://localhost:${PORT}/api/programs`    
-
+        'All Directors': `http://localhost:${PORT}/api/directors`,   
+        'All Programs': `http://localhost:${PORT}/api/programs`,
+        'All Productions': `http://localhost:${PORT}/api/productions`
     })
 })
 router.use('/api/actors', require('./api/actorRoutes'))
-router.use('/api/director', require('./api/directorRoutes')) 
+router.use('/api/directors', require('./api/directorRoutes')) 
 router.use('/api/programs', require('./api/programRoutes'))
+router.use('/api/productions', require('./api/productionRoutes')) 
 
 
 

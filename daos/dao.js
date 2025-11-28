@@ -9,15 +9,23 @@ const directorDao = {
     ...daoCommon,
     ...require('./api/directorDao')
 }
+
 const programDao = {
     ...daoCommon,
     ...require('./api/programDao')
 }
+
+const productionDao = {
+    ...daoCommon,
+    ...require('./api/productionDao')
+}
+
 
 
 // all endpoints will meet up her
 module.exports = {
     actorDao,
     directorDao,
-    programDao
+    programDao,
+    productionDao 
 }
