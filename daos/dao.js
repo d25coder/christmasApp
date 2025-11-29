@@ -20,6 +20,10 @@ const productionDao = {
     ...require('./api/productionDao')
 }
 
+const stream_platDao = {
+    ...daoCommon,
+    ...require('./api/stream_platDao') 
+}
 
 
 // all endpoints will meet up her
@@ -27,5 +31,6 @@ module.exports = {
     actorDao,
     directorDao,
     programDao,
-    productionDao 
+    productionDao,
+    stream_platDao 
 }

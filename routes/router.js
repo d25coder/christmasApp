@@ -12,14 +12,15 @@ router.get('/api', (req, res)=> {
         'All Actors': `http://localhost:${PORT}/api/actors`,
         'All Directors': `http://localhost:${PORT}/api/directors`,   
         'All Programs': `http://localhost:${PORT}/api/programs`,
-        'All Productions': `http://localhost:${PORT}/api/productions`
+        'All Productions': `http://localhost:${PORT}/api/productions`,
+        'All Stream_plat': `http://localhost:${PORT}/api/stream_plat`
     })
 })
 router.use('/api/actors', require('./api/actorRoutes'))
 router.use('/api/directors', require('./api/directorRoutes')) 
 router.use('/api/programs', require('./api/programRoutes'))
 router.use('/api/productions', require('./api/productionRoutes')) 
-
+router.use('/apr/stream_plat', require('./api/stream_platRoutes'))
 
 
 
