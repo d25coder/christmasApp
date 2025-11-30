@@ -30,7 +30,8 @@ const actorDao = {
     //             queryAction(res, error, rows, table) 
     //         }
     //     )
-    // }
+    // },
+    
 }
 
 

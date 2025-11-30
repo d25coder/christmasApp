@@ -79,7 +79,17 @@ const daoCommon = {
                 // }
             }
         )
-    }
+    },
+// Count all rows
+    countAll: (res, table)=> {
+        connect.execute(
+            `SELECT COUNT(*) AS count FROM ${table};`,
+            (error, rows)=> {
+                queryAction(res, error, rows, table)
+            }
+        )
+    },
+        
 }
 
 

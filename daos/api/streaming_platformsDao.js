@@ -6,4 +6,4 @@ const streaming_platformsDao = {
 }
 
 
-module.exports = streaming_platformsDao 
+module.exports = streaming_platformsDao  
