@@ -20,9 +20,9 @@ const productionDao = {
     ...require('./api/productionDao')
 }
 
-const stream_platDao = {
+const streaming_platformsDao = {
     ...daoCommon,
-    ...require('./api/stream_platDao') 
+    ...require('./api/streaming_platformsDao')
 }
 
 
@@ -32,5 +32,5 @@ module.exports = {
     directorDao,
     programDao,
     productionDao,
-    stream_platDao 
+    streaming_platformsDao 
 }
