@@ -26,10 +26,18 @@ router.get('/count', (req, res)=> {
 })
 
 
-
-
 // Q2. FIND BY ID http://localhost:5554/api/actors/27
 router.get('/:id', (req, res)=> {
     dao.findById(res, dao.table, req.params.id)
 })
+// CREATE
+router.post('/create', (req, res)=> {
+    dao.create(req, res, dao.table) 
+})
+
+// UPDATE
+router.patch('/update/:id', (req, res)=> {
+    dao.update(req, res, dao.table)
+})
+
 module.exports = router 

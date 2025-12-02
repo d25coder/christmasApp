@@ -20,7 +20,7 @@ router.get('/get_streaming_platform/:id', (req, res)=> {
 
 // ORDER straming platform BY alphabet
 // 
-router.get('/')
+router.get('/orderby/:')
 //SORT
 // http://localhost:5554/ap/streaming_platform/sort
 router.get('/sort/:sorter', (req, res)=> {
