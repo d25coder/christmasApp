@@ -23,9 +23,9 @@ router.get('/get_director/:id', (req, res)=> {
 })
 
 // directorDao.js Search Director by director Name "c"
-// http://localhost:5554/api/directors/search?fName=c
+// http://localhost:5554/api/directors/search?director=c
 router.get('/search', (req, res)=> {
-    dao.search(req, res, dao,table)
+    dao.search(req, res, dao.table)
 })
 
 

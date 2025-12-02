@@ -18,6 +18,9 @@ router.get('/get_streaming_platform/:id', (req, res)=> {
     dao.findProgramByStreaming_platform(res, dao.table, req.params.id) 
 })
 
+// ORDER straming platform BY alphabet
+// 
+router.get('/')
 //SORT
 // http://localhost:5554/ap/streaming_platform/sort
 router.get('/sort/:sorter', (req, res)=> {
