@@ -15,9 +15,9 @@ router.get('/sort/:sorter', (req, res)=> {
     dao.sort(res, dao.table, req.params.sorter)
 })
 
-// Q4. SEARCH actor by fName c- letter http://localhost:5554/api/actors/search?first_name=c
+// Q4. actorDao.js SEARCH actor by fName c- letter http://localhost:5554/api/actors/search?fName=c
 router.get('/search', (req, res)=> {
-    dao.search(req, res, dao.table, req.params.search)
+    dao.search(req, res, dao.table)
 })
 
 // Q5 COUNT ALL rows

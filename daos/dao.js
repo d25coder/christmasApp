@@ -20,9 +20,9 @@ const productionDao = {
     ...require('./api/productionDao')
 }
 
-const streaming_platformsDao = {
+const streaming_platformDao = {
     ...daoCommon,
-    ...require('./api/streaming_platformsDao')
+    ...require('./api/streaming_platformDao') 
 }
 // str_platDao shows properties inside the object { table-wrote inside str_platDao, findAll,-findById,-sort,- wrote inside daoCommon };
 // daoCommon holds generic queries
@@ -38,5 +38,5 @@ module.exports = {
     directorDao,
     programDao,
     productionDao,
-    streaming_platformsDao
+    streaming_platformDao
 }

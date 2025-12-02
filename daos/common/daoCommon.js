@@ -88,8 +88,7 @@ const daoCommon = {
                 queryAction(res, error, rows, table)
             }
         )
-    },
-        
+    }    
 }
 
 
