@@ -16,10 +16,20 @@ router.get('/get_program/:id', (req, res)=> {
     dao.findProgramByProductionId(res, dao.table, req.params.id)
 })
 
+// programDao.js = Find Program By Alphabet ending with S
+/http://localhost:5554/api/programs/get_program
+router.get('/')
+
 // Sort
-// http://localhost:5554/api/programs/sort/runtime
+/http://localhost:5554/api/programs/sort/runtime how to sort by run time?
 router.get('/sort/:sorter', (req, res)=> {
-    dao.sort(res. dao.table, req.params.sorter)
+    dao.sort(res, dao.table, req.params.sorter)
+})
+
+// Count All
+/http:localhost:5554/api/directors/
+router.get('/count', (req, res)=> {
+    dao.countAll(res, dao.table)
 })
 
 // Find By Id
@@ -28,4 +38,13 @@ router.get('/:id', (req, res)=> {
     dao.findById(res, dao.table, req.params.id)
 })
 
+// CREATE
+router.post('/create', (req, res)=> {
+    dao.create(req, res, dao.table) 
+})
+
+// UPDATE
+router.patch('/update/:id', (req, res)=> {
+    dao.update(req, res, dao.table)
+})
 module.exports = router

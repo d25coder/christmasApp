@@ -19,17 +19,33 @@ router.get('/get_streaming_platform/:id', (req, res)=> {
 })
 
 // ORDER straming platform BY alphabet
-// 
+/http://localhos
 router.get('/orderby/:')
+
 //SORT
 // http://localhost:5554/ap/streaming_platform/sort
 router.get('/sort/:sorter', (req, res)=> {
     dao.sort(res, dao.table, req.params.sorter)
 })
 
+// Count All
+/http:localhost:5554/api/directors/
+router.get('/count', (req, res)=> {
+    dao.countAll(res, dao.table)
+})
+
 // Find BY Id
 // http:localhost:5554/api/streaming_platform/5
 router.get('/:id', (req, res)=> {
     dao.findById(res, dao.table, req.params.id)
+})
+// CREATE
+router.post('/create', (req, res)=> {
+    dao.create(req, res, dao.table) 
+})
+
+// UPDATE
+router.patch('/update/:id', (req, res)=> {
+    dao.update(req, res, dao.table)
 })
 module.exports = router

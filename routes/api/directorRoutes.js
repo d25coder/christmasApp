@@ -28,6 +28,12 @@ router.get('/search', (req, res)=> {
     dao.search(req, res, dao.table)
 })
 
+// Count All
+/http:localhost:5554/api/directors/
+router.get('/count', (req, res)=> {
+    dao.countAll(res, dao.table)
+})
+
 // FIndById 
 // http://localhost:5554/api/directors/25
 router.get('/:id', (req, res)=> {

@@ -22,10 +22,10 @@ router.get('/search', (req, res)=> {
 
 // Q5 COUNT ALL rows
 router.get('/count', (req, res)=> {
-    dao.countAll(res, table)
+    dao.countAll(res, dao.table)
 })
 
-
+ 
 // Q2. FIND BY ID http://localhost:5554/api/actors/27
 router.get('/:id', (req, res)=> {
     dao.findById(res, dao.table, req.params.id)

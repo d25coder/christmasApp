@@ -1,7 +1,7 @@
 const con = require('../../config/dbconfig')
+const { queryAction } = require('../../helpers/queryAction') 
 
-
-// Find Program by Production Id - v7
+// Find Program by Production Id using Pivot Table- v7
 // http://localhost:5554/api/programs/get_production/12
 const programDao = {
     table: 'program',
@@ -16,8 +16,8 @@ const programDao = {
         )
     },
 // SELECT title FROM program WHERE title LIKE "%s"; = all programs ending with s
-    findProgramsByLastLetter: (req, res)=> {
-        const sql = `SELECT title FROM ${table} WHERE title LIKE '%${s}';`
+    findProgramsByAlphabet: (req, res)=> {
+        const sql = `SELECT title FROM ${table} WHERE title LIKE '%${title}';`
         con.query(
             sql,
             (error, rows)=> {

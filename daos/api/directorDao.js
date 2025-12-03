@@ -1,6 +1,6 @@
 const con = require('../../config/dbconfig')
 const { queryAction } = require('../../helpers/queryAction')
- 
+  
 // Find Program By Director Id - v7
 const directorDao = {
     table: 'director',
