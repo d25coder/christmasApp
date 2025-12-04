@@ -16,7 +16,7 @@ const programDao = {
         )
     },
 // SELECT title FROM program WHERE title LIKE "%s"; = all programs ending with s
-    findProgramsByAlphabet: (req, res)=> {
+    findProgramsByAlphabet: (res, table)=> {
         const sql = `SELECT title FROM ${table} WHERE title LIKE '%${title}';`
         con.query(
             sql,

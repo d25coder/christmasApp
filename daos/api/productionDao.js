@@ -24,7 +24,7 @@ const productionDao = {
             (error, rows)=> {
                 queryAction(res, error, rows, table) 
             }
-        )
+        ) 
     },
 // Order Production table alphabetically
     orderby: (req, res)=> {

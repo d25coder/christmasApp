@@ -20,7 +20,7 @@ router.get('/get_streaming_platform/:id', (req, res)=> {
 
 // ORDER straming platform BY alphabet
 /http://localhos
-router.get('/orderby/:')
+router.get('/orderby/:'(res,\\))
 
 //SORT
 // http://localhost:5554/ap/streaming_platform/sort
@@ -29,8 +29,8 @@ router.get('/sort/:sorter', (req, res)=> {
 })
 
 // Count All
-/http:localhost:5554/api/directors/
-router.get('/count', (req, res)=> {
+// http:localhost:5554/api/directors/count/all
+router.get('/count/all', (req, res)=> {
     dao.countAll(res, dao.table)
 })
 
@@ -39,6 +39,7 @@ router.get('/count', (req, res)=> {
 router.get('/:id', (req, res)=> {
     dao.findById(res, dao.table, req.params.id)
 })
+
 // CREATE
 router.post('/create', (req, res)=> {
     dao.create(req, res, dao.table) 

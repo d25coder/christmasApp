@@ -4,24 +4,28 @@ const router = express.Router()
 const { actorDao: dao } = require('../../daos/dao')    //pull actorDao & name it dao
 const { table } = require('../../daos/api/actorDao')
 
-// Q1. FIND ALL movies - http://localhost:5554/api/actors 
+// Q1. FIND ALL movies - 
+// http://localhost:5554/api/actors 
 // when i click on the link for All Actors, i want you to findAll > method in daoCommons
 router.get('/', (req, res)=> {
     dao.findAll(res, dao.table)
 })
 
-// Q3. SORT throgh movies http://localhost:5554/api/actors/sort/lName
+// Q3. SORT throgh movies 
+// http://localhost:5554/api/actors/sort/lName
 router.get('/sort/:sorter', (req, res)=> {
     dao.sort(res, dao.table, req.params.sorter)
 })
 
-// Q4. actorDao.js SEARCH actor by fName c- letter http://localhost:5554/api/actors/search?fName=c
+// Q4. actorDao.js SEARCH actor by fName c- letter 
+// http://localhost:5554/api/actors/search?fName=c
 router.get('/search', (req, res)=> {
     dao.search(req, res, dao.table)
 })
 
 // Q5 COUNT ALL rows
-router.get('/count', (req, res)=> {
+// http:localhost:5554/actors/count/all
+router.get('/count/all', (req, res)=> {
     dao.countAll(res, dao.table)
 })
 

@@ -23,11 +23,16 @@ router.get('/search', (req, res)=> {
 })
 
 // Count All
-/http:localhost:5554/api/productions/
-router.get('/count', (req, res)=> {
+// http:localhost:5554/api/productions/count/all
+router.get('/count/all', (req, res)=> {
     dao.countAll(res, dao.table)
 })
 
+//Order By
+/http://localhost:5554/api/streaming_platforms/order
+router.get('/order/', (req, res)=>{
+    dao.orderby()
+})
 // FIndById 
 // http://localhost:5554/api/production/25
 router.get('/:id', (req, res)=> {

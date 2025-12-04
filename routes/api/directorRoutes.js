@@ -29,8 +29,8 @@ router.get('/search', (req, res)=> {
 })
 
 // Count All
-/http:localhost:5554/api/directors/
-router.get('/count', (req, res)=> {
+/http:localhost:5554/api/directors/count/all
+router.get('/count/all', (req, res)=> {
     dao.countAll(res, dao.table)
 })
 
