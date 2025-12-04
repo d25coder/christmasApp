@@ -20,7 +20,7 @@ const streaming_platformDao = {
 // order streamPlat alphabetically
     orderBy: (res, table)=> {
         con.execute(
-            `SELECT * FROM ${table} ORDER BY streaming_platform;`
+            `SELECT * FROM ${table} ORDER BY streaming_platform;`,
             (error, rows)=> {
                 queryAction(res, error, rows, table)
             }

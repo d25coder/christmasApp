@@ -24,12 +24,12 @@ const productionDao = {
             (error, rows)=> {
                 queryAction(res, error, rows, table) 
             }
-        ) 
+        )  
     },
 // Order Production table alphabetically
-    orderby: (req, res)=> {
+    orderby: (res, table)=> {
         con.execute(
-            `SELECT * FROM ${table} ORDER BY production;`
+            `SELECT * FROM ${table} ORDER BY production;`,
             (error, rows)=> {
                 queryAction(res, error, rows, table)
             }

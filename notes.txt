@@ -23,3 +23,6 @@ r` (`actor_id`))
 -this means there is a spelling Error
 -check call back functions in fileDao.js
 
+
+// table is not defined
+-desc that table in sql 

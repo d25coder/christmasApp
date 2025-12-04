@@ -11,7 +11,7 @@ router.get('/', (req, res)=> {      //404 Error after clicking link
 })
 
 // Sort through Production
-// http:/localhost:5554/api/productions/sort/production_id
+// http://localhost:5554/api/productions/sort/production_id
 router.get('/sort/:sorter', (req, res)=> {
     dao.sort(res, dao.table, req.params.sorter)
 })
@@ -23,18 +23,18 @@ router.get('/search', (req, res)=> {
 })
 
 // Count All
-// http:localhost:5554/api/productions/count/all
-router.get('/count/all', (req, res)=> {
+// http://localhost:5554/api/productions/count
+router.get('/count', (req, res)=> {
     dao.countAll(res, dao.table)
 })
 
-//Order By
-/http://localhost:5554/api/streaming_platforms/order
-router.get('/order/', (req, res)=>{
-    dao.orderby()
+//Order By in productionDao.ja
+// http://localhost:5554/api/productions/order-by
+router.get('/order-by', (req, res)=>{
+    dao.orderby(res, dao.table) 
 })
 // FIndById 
-// http://localhost:5554/api/production/25
+// http://localhost:5554/api/productions/25
 router.get('/:id', (req, res)=> {
     dao.findById(res, dao.table, req.params.id)
 })

@@ -20,7 +20,8 @@ router.use('/api/actors', require('./api/actorRoutes'))
 router.use('/api/directors', require('./api/directorRoutes')) 
 router.use('/api/programs', require('./api/programRoutes'))
 router.use('/api/productions', require('./api/productionRoutes')) 
-router.use('/api/streaming_platform', require('./api/streaming_platformRoutes')) 
+router.use('/api/streaming_platform', require('./api/streaming_platformRoutes'))
+
 
 
 

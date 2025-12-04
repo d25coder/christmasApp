@@ -29,7 +29,7 @@ router.get('/search', (req, res)=> {
 })
 
 // Count All
-/http:localhost:5554/api/directors/count/all
+// http:localhost:5554/api/directors/count/all
 router.get('/count/all', (req, res)=> {
     dao.countAll(res, dao.table)
 })

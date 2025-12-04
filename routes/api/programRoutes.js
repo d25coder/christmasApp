@@ -17,20 +17,20 @@ router.get('/get_program/:id', (req, res)=> {
 })
 
 // programDao.js = SEARCH: Find Program By Alphabet ending with S
-/http://localhost:5554/api/programs/search/find_program_by_s
+// http://localhost:5554/api/programs/search/find_program_by_s
 router.get('/search', (req, res)=> {
     dao.findProgramsByAlphabet(res, dao.table)
 })
 
 // Sort
-/http://localhost:5554/api/programs/sort/runtime how to sort by run time?
+// http://localhost:5554/api/programs/sort/runtime how to sort by run time?
 router.get('/sort/:sorter', (req, res)=> {
     dao.sort(res, dao.table, req.params.sorter)
 })
 
 // Count All
-// http:localhost:5554/api/directors/count/all
-router.get('/count/all', (req, res)=> {
+// http:localhost:5554/api/programs/count
+router.get('/count', (req, res)=> {
     dao.countAll(res, dao.table)
 })
 
