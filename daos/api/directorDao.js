@@ -17,7 +17,7 @@ const directorDao = {
             (error, rows)=> {
             queryAction(res, error, rows, table) 
             }
-        )
+        ) 
     }, 
 // Search Director by Name using "c"
     search: (req, res, table)=> {

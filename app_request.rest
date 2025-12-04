@@ -1,15 +1,20 @@
 # ACTORS
 // Q1. FIND ALL actors  
-GET http://localhost:5554/api/actors
-
-### 
-// Q3. SORT throgh actors lName 
-GET http://localhost:5554/api/actors/sort/lName
-
-##
-
+GET http://localhost:5554/api/actors 
 
 ###
-// Q2. FIND actor BY ID 
-GET http://localhost:5554/api/actors/27
+ // Q2. SORT
+ GET http://localhost:5554/api/actors/sort/lName
+
+ ###
+ // Q3. SEARCH 
+ GET http://localhost:5554/api/actors/search?first_name=c 
+
+ ###
+ // Q4. COUNT ALL
+ GET http://localhost:5554/actors/count
+
+ ###
+ // Q5. FIND BY ID
+ GET http://localhost:5554/api/actors/27
 

@@ -14,11 +14,11 @@ router.get('/', (req, res)=> {
 // http://localhost:5554/api/directors/sort/director_id
 router.get('/sort/:sorter', (req, res)=> {
     dao.sort(res, dao.table, req.params.sorter)
-})
+}) 
 
 // driectorDao.js Find Programs by Director Id 
 // http://localhost:5554/api/directors/get_director/:6
-router.get('/get_director/:id', (req, res)=> {
+router.get('/get_program/:id', (req, res)=> {
     dao.findProgramsByDirector(res, dao.table, req.params.id)
 })
 
@@ -29,13 +29,13 @@ router.get('/search', (req, res)=> {
 })
 
 // Count All
-// http:localhost:5554/api/directors/count/all
-router.get('/count/all', (req, res)=> {
+// http:localhost:5554/api/directors/count
+router.get('/count', (req, res)=> {
     dao.countAll(res, dao.table)
 })
 
 // FIndById 
-// http://localhost:5554/api/directors/25
+// http://localhost:5554/api/directors/30
 router.get('/:id', (req, res)=> {
     dao.findById(res, dao.table, req.params.id)
 })

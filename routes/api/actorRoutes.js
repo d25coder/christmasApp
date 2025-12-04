@@ -15,22 +15,23 @@ router.get('/', (req, res)=> {
 // http://localhost:5554/api/actors/sort/lName
 router.get('/sort/:sorter', (req, res)=> {
     dao.sort(res, dao.table, req.params.sorter)
-})
+}) 
 
 // Q4. actorDao.js SEARCH actor by fName c- letter 
-// http://localhost:5554/api/actors/search?fName=c
+// http://localhost:5554/api/actors/search?first_name=c
 router.get('/search', (req, res)=> {
     dao.search(req, res, dao.table)
 })
 
 // Q5 COUNT ALL rows
-// http:localhost:5554/actors/count/all
-router.get('/count/all', (req, res)=> {
+// http://localhost:5554/actors/count
+router.get('/count', (req, res)=> {
     dao.countAll(res, dao.table)
 })
 
  
-// Q2. FIND BY ID http://localhost:5554/api/actors/27
+// Q2. FIND BY ID 
+// http://localhost:5554/api/actors/27
 router.get('/:id', (req, res)=> {
     dao.findById(res, dao.table, req.params.id)
 })
