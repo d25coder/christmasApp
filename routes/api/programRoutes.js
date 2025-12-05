@@ -10,7 +10,7 @@ router.get('/', (req, res)=> {
     dao.findAll(res, dao.table)
 })
 
-// programDao.js = Find Program By Production Id 
+// programDao.js = Find Program By Production Id - PIVOT TABLE
 //http://localhost:5554/api/programs/get_production/12
 router.get('/get_production/:id', (req, res)=> {
     dao.findProgramByProductionId(res, dao.table, req.params.id)

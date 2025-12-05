@@ -31,13 +31,13 @@ router.get('/sort/:sorter', (req, res)=> {
 })
 
 // Count All 
-// http:localhost:5554/api/streaming_platform/count
+// http://localhost:5554/api/streaming_platform/count
 router.get('/count', (req, res)=> {
     dao.countAll(res, dao.table)
 })
 
 // Find BY Id - individual id
-// http:localhost:5554/api/streaming_platform/5
+// http://localhost:5554/api/streaming_platform/5
 router.get('/:id', (req, res)=> {
     dao.findById(res, dao.table, req.params.id)
 })
