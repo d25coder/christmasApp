@@ -24,6 +24,9 @@ server.use(cors())
 server.use(express.json()) //refers to pkg.json start/dev to run server.js file, everything runs here
 server.use(express.urlencoded({ extended: true})) 
 
+// Let server know we're using ejs as the view engine
+server.use('view engine', 'ejs')
+
 // localhost:5554
 server.use('/', router) //points to router file 
 

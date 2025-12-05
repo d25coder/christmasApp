@@ -3,6 +3,15 @@ const router = express.Router()
 // create a port
 const PORT = process.env.PORT || 5554
 
+// HOME PAGE 
+// http://localhost:5554
+router.get('/', (req, res)=> {
+    res.render('/pages/home', {
+        title: 'actor-app home', 
+        name: "Destinie's Christmas App"
+    })
+})
+
 // create a root route
 //takes us to the api page
 // http://localhost:5554/api
