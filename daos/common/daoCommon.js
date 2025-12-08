@@ -91,7 +91,7 @@ const daoCommon = {
     },
 // Create
     create: (req, res, table)=> {
-        if (Object.keys(req.body).length == 0) { // takes body, takes properties in req.body object, then put with fields
+        if (Object.keys(req.body).length === 0) { // takes body, takes properties in req.body object, then put with fields
             res.json({
                 "error": true,
                 "message": "No fields to create"
@@ -100,20 +100,25 @@ const daoCommon = {
             const fields = Object.keys(req.body)
             const values = Object.values(req.body) //take the vales in req,body obj, then store in values
 // takes object, split it, parse through it, then put it back together in query line 104
-            connnect.execute(
+            connect.execute(
 // INSERT INTO actor table SET {fields.join(takes the first item fName)} ? = Garbriela, then it will do the same for lName
                 `INSERT INTO ${table} SET ${fields.join(' = ?, ')} = ?;`, //JOIN method works on arrays or string, JOIN arguments inside the paranthesis of an item in an array or character in a string
                 values, 
 // what array am i using to do this, wherever theres a ?, it will use items and values to answer the question
                 (error, dbres)=> {
                     if (!error){
-                        res.json({
-                            Last_id: dbres.insertId
+                        // res.json({
+                        //     Last_id: dbres.insertId
+                        // })
+                        console.log(dbres)
+                        res.render('pages/success', {
+                            title: 'Success',
+                            name: 'Success'
                         })
                     } else {
                         console.log(`${table}DAO error: `, error)
                     }
-                }
+                } 
             )
         }
     },

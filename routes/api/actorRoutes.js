@@ -24,9 +24,9 @@ router.get('/search', (req, res)=> {
 })
 
 // Q5 COUNT ALL rows
-// http://localhost:5554/actors/count
+// http://localhost:5554/api/actors/count
 router.get('/count', (req, res)=> {
-    dao.countAll(res, dao.table)
+    dao.countAll(res, dao.table) 
 })
 
  
@@ -35,7 +35,9 @@ router.get('/count', (req, res)=> {
 router.get('/:id', (req, res)=> {
     dao.findById(res, dao.table, req.params.id)
 })
+
 // CREATE
+// http://localhost:5554/api/actors/create 
 router.post('/create', (req, res)=> {
     dao.create(req, res, dao.table) 
 })

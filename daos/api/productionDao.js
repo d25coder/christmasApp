@@ -26,15 +26,15 @@ const productionDao = {
             }
         )  
     },
-// Order Production table alphabetically
-    orderby: (res, table)=> {
-        con.execute(
-            `SELECT * FROM ${table} ORDER BY production;`,
-            (error, rows)=> {
-                queryAction(res, error, rows, table)
-            }
-        )
-    }
+// Order Production table alphabetically = Its THE SAme as the SORT method
+    // orderby: (res, table)=> {
+    //     con.execute(
+    //         `SELECT * FROM ${table} ORDER BY production;`,
+    //         (error, rows)=> {
+    //             queryAction(res, error, rows, table)
+    //         }
+    //     )
+    // }
 }
 
 

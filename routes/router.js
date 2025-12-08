@@ -12,6 +12,14 @@ router.get('/', (req, res)=> {
     })
 })
 
+// ACTOR-FORM => http://localhost:5554/actor-form
+router.get('/actor-form', (req, res)=> {
+    res.render('pages/actor-Form', {
+        title: 'actor form',
+        name: 'Actor-Form'
+    })
+})
+
 // create a root route
 //takes us to the api page
 // http://localhost:5554/api

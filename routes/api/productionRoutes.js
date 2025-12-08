@@ -30,9 +30,10 @@ router.get('/count', (req, res)=> {
 
 //Order By in productionDao.ja
 // http://localhost:5554/api/productions/order-by
-router.get('/order-by', (req, res)=>{
-    dao.orderby(res, dao.table) 
-})
+// router.get('/order-by', (req, res)=>{
+//     dao.orderby(res, dao.table) 
+// })
+
 // FIndById 
 // http://localhost:5554/api/productions/25
 router.get('/:id', (req, res)=> {

@@ -13,10 +13,10 @@ router.get('/', (req, res)=> {
 })
 
 // Find Program By Streaming Platform
-// http://localhost:5554/api/streaming_platform/get_streaming_platform/9
-router.get('/get_streaming_platform/:id', (req, res)=> {
+// http://localhost:5554/api/streaming_platform/get_program/9
+router.get('/get_program/:id', (req, res)=> {
     dao.findProgramByStreaming_platform(res, dao.table, req.params.id) 
-})
+}) 
 
 // ORDER straming platform BY alphabet
 // http://localhost:5554/api/streaming_platform/order-by
@@ -26,9 +26,9 @@ router.get('/order-by', (req, res)=> {          //Best to use - instead of _
 
 //SORT
 // http://localhost:5554/ap/streaming_platform/sort/streaming_platform_id
-router.get('/sort/:sorter', (req, res)=> {
-    dao.sort(res, dao.table, req.params.sorter)
-})
+// router.get('/sort/:sorter', (req, res)=> {
+//     //dao.sort(res, dao.table, req.params.sorter)
+// })
 
 // Count All 
 // http://localhost:5554/api/streaming_platform/count

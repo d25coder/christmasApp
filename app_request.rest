@@ -2,9 +2,10 @@
 // Q1. FIND ALL actors  
 GET http://localhost:5554/api/actors 
 
+
 ###
  // Q2. SORT ACTORS BY LAST NAME
- GET http://localhost:5554/api/actors/sort/lName
+ GET http://localhost:5554/api/actors/sort/lName 
 
  ###
  // Q3. SEARCH ACTORS BY FIRST NAME WITH A 'C'
@@ -18,6 +19,12 @@ GET http://localhost:5554/api/actors
  // Q5. FIND ACTOR BY INDIVIDUAL ID
  GET http://localhost:5554/api/actors/27
 
+ ###
+ POST http://localhost:5554/api/actors/create
+
+
+
+
 ###
 // DIRECTORS
 // Q1. FIND ALL DIRECTORS
@@ -25,7 +32,7 @@ GET http://localhost:5554/api/directors
 
 ###
 // Q2. SORT DIRECTORS BY ID - CHECK
-GET http://localhost:5554/api/directors/sort/director_id
+GET http://localhost:5554/api/directors/sort/director
 
 ###
 // Q3. FIND PROGRAM BY DIRECTOR ID
@@ -42,13 +49,19 @@ GET http://localhost:5554/api/directors/count
 ### Q6. FIND DIRECTOR BY INDIVIDUAL ID - CHECK
 GET http://localhost:5554/api/directors/30
 
+###
+POST http://localhost:5554/api/directors/create
+
+
+
+
 // PRODUCTION
 // Q1. FIND ALL PRODUCTION
 GET http://localhost:5554/api/productions
 
 ###
-// Q2. SORT THROUGH PRODUCTION BY ID
-GET http://localhost:5554/api/productions/sort/production_id
+// Q2. SORT THROUGH PRODUCTION APLHABETICALLY 
+GET http://localhost:5554/api/productions/sort/production
 
 ###
 // Q3. SEARCH PRODUCTION BY LETTER 'W'
@@ -59,12 +72,15 @@ GET http://localhost:5554/api/productions/search?production=w
 GET http://localhost:5554/api/productions/count
 
 ###
-// Q5. ORDER PRODUCTION BY
-GET http://localhost:5554/api/productions/order-by
+// Q5. FIND PRODUCTION BY INDIVIDUAL ID
+GET http://localhost:5554/api/productions/25
 
 ###
-// Q6. FIND PRODUCTION BY INDIVIDUAL ID
-GET http://localhost:5554/api/productions/25
+// Q6. 
+POST http://localhost:5554/api/productions/create 
+
+
+
 
 // PROGRAMS
 // Q1. FIND ALL PROGRAMS
@@ -87,13 +103,19 @@ GET http://localhost:5554/api/programs/count
 GET http://localhost:5554/api/programs/25
 
 ###
+POST http://localhost:5554/api/programs/create 
+
+
+
+
+###
 // STREAMING PLATFORM
 // Q1. FIND ALL STREAMING PLATFORM
 GET http://localhost:5554/api/streaming_platform
 
 ###
 // Q2. FIND PROGRAM BY STREAMING PLATFORM -PIVOT TABLE
-GET http://localhost:5554/api/streaming_platform/get_streaming_platform/9
+GET http://localhost:5554/api/streaming_platform/get_program/9
 
 ###
 // Q3. ORDER STREAMING PLATFORM ALPHABETICALLY
@@ -101,12 +123,16 @@ GET http://localhost:5554/api/streaming_platform/order-by
 
 ###
 // Q4. SORT THROUGH  STREAMING PLATFORM - CHECK
-GET http://localhost:5554/ap/streaming_platform/sort/streaming_platform_id 
+//GET http://localhost:5554/ap/streaming_platform/sort/streaming_platform_id 
 
 ###
-// Q5. COUNT ALL STREAMING PLATFORM
+// Q4. COUNT ALL STREAMING PLATFORM
 GET http://localhost:5554/api/streaming_platform/count 
 
 ###
-// Q6. FIND STREAMING PLATFORM BY INDIVIDUAL ID
+// Q5. FIND STREAMING PLATFORM BY INDIVIDUAL ID
 GET http://localhost:5554/api/streaming_platform/5 
+
+###
+POST http://localhost:5554/api/streaming_platform/create
+
