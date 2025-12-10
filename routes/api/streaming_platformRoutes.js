@@ -22,7 +22,7 @@ router.get('/get_program/:id', (req, res)=> {
 // http://localhost:5554/api/streaming_platform/order-by
 router.get('/order-by', (req, res)=> {          //Best to use - instead of _
     dao.orderBy(res, dao.table)
-})
+}) 
 
 //SORT
 // http://localhost:5554/ap/streaming_platform/sort/streaming_platform_id
@@ -43,6 +43,7 @@ router.get('/:id', (req, res)=> {
 })
 
 // CREATE
+// 
 router.post('/create', (req, res)=> {
     dao.create(req, res, dao.table) 
 })

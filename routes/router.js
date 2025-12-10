@@ -2,6 +2,8 @@ const express = require('express')
 const router = express.Router()
 // create a port
 const PORT = process.env.PORT || 5554
+const axios = require('axios') //pulls information from Const URL
+router.use(express.static('public')) //lets router know to use public folder
 
 // HOME PAGE with home.ejs
 // http://localhost:5554
@@ -40,7 +42,19 @@ router.use('/api/productions', require('./api/productionRoutes'))
 router.use('/api/streaming_platform', require('./api/streaming_platformRoutes'))
 
 
-
+// Renders data from program.ejs
+router.get('/programs', (req, res)=> {
+  const URL = 'http://localhost:5554/api/programs'
+  axios.get(URL).then(resp => {
+    // //console.log(data) // check point
+    res.render('pages/program', { 
+        title: 'programs',
+        name: 'Christmas programs',
+        endpoint: 'programs',
+        data: resp.data 
+    })
+  })   
+})
 
 
 // ERROR HANDLER ROUTE

@@ -25,6 +25,7 @@ server.use(express.json()) //refers to pkg.json start/dev to run server.js file,
 server.use(express.urlencoded({ extended: true})) 
 
 // Let server know we're using ejs as the view engine
+//
 server.set('view engine', 'ejs')
 
 // localhost:5554

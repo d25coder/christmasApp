@@ -9,7 +9,37 @@
 <body>
     <header class="header" id="header">
         <div class="container">
-            <h1 class="h1-heading display-1 text-center"><%= name %></h1>
-            <p class="headeer-text">Add an actor <a href="/actor-form">here</a>.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="h1-heading display-1 text-center"><%= name %></h1>
+                    <p class="headeer-text">Add an actor <a href="/actor-form">here</a>.</p>
+                </div>
+                <div class="col-md-8">
+                    <ul>
+                        <li>
+                            <a href="/">home</a>
+                        </li>
+                        <li>
+                            <a href="/api/actors">actor</a>
+                        </li>
+                        <li>
+                            <a href="/api/directors">director</a>
+                        </li>
+                        <li>
+                            <a href="/api/productions">production</a>
+                        </li>
+                        <li>
+                            <a href="/api/programs">program</a>
+                        </li>
+                        <li>
+                            <a href="/api/streaming_platform">streaming_platform</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
+
+<!-- lines 3-8 used bootstrap for title font -->
+ <!-- line 12-16 used header, container,row for actor form
+   href - hyper reference lets use know what its linked to
