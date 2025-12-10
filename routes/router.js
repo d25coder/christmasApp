@@ -42,15 +42,59 @@ router.use('/api/productions', require('./api/productionRoutes'))
 router.use('/api/streaming_platform', require('./api/streaming_platformRoutes'))
 
 
+router.get('/actors', (req, res)=> {
+  const URL = 'http://localhost:5554/api/actors'
+  axios.get(URL).then(resp => {
+    res.render('pages/actors', { 
+        title: 'actors',
+        name: "Destinie's Christmas Actors",
+        endpoint: 'actors',
+        data: resp.data 
+    })
+  })   
+})
+router.get('/directors', (req, res)=> {
+  const URL = 'http://localhost:5554/api/directors'
+  axios.get(URL).then(resp => {
+    res.render('pages/directors', { 
+        title: 'directors',
+        name: "Destinie's Christmas Directors",
+        endpoint: 'directors',
+        data: resp.data 
+    })
+  })   
+})
+router.get('/productions', (req, res)=> {
+  const URL = 'http://localhost:5554/api/productions'
+  axios.get(URL).then(resp => {
+    res.render('pages/productions', { 
+        title: 'productions',
+        name: "Destinie's Christmas Productions",
+        endpoint: 'productions',
+        data: resp.data 
+    })
+  })   
+})
 // Renders data from program.ejs
 router.get('/programs', (req, res)=> {
   const URL = 'http://localhost:5554/api/programs'
   axios.get(URL).then(resp => {
-    // //console.log(data) // check point
+    //console.log(resp.data) // check point
     res.render('pages/program', { 
         title: 'programs',
-        name: 'Christmas programs',
+        name: "Destinie's Christmas Programs",
         endpoint: 'programs',
+        data: resp.data 
+    })
+  })   
+})
+router.get('/streaming_platforms', (req, res)=> {
+  const URL = 'http://localhost:5554/api/streaming_platforms'
+  axios.get(URL).then(resp => {
+    res.render('pages/streaming_platforms', { 
+        title: 'Streaming Platforms',
+        name: "Destinie's Christmas Streaming Platforms",
+        endpoint: 'streaming_platforms',
         data: resp.data 
     })
   })   

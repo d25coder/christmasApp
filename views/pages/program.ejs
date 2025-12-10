@@ -2,16 +2,27 @@
 
 
 <main class="main" id="main">
-    <% data.forEach(program => { %>
-        <div>
-            <figure>
-                <img src="/images/<%= program.img%>" alt="image of <%= program.title%>">
-                <figcaption>
-                    <%= program.title %>
-                </figcaption>
-            </figure>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <% data.forEach(item => { %>
+                <div class="col">
+                    <div class="card program-card">
+                        <img class="img-fluid card-img-top program-img" src="/images/<%= item.img %>" alt="image of <%= item.title %>" />
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <%= item.title %>
+                            </h2>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/programs/<%= item.program_id %>">
+                                view more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
         </div>
-    <% }) %>
+    </div>
 </main>
 
 <%- include('../partials/footer') %>
