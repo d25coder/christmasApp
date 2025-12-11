@@ -64,6 +64,18 @@ router.get('/directors', (req, res)=> {
     })
   })   
 })
+router.get('/home', (req, res)=> {
+  const URL = 'http://localhost:5554/api/home'
+  axios.get(URL).then(resp => {
+    console.log(resp.data) // check point
+    res.render('pages/home', { 
+        title: 'home',
+        name: "Destinie's Christmas Home Page",
+        endpoint: 'home',
+        data: resp.data 
+    })
+  })   
+})
 router.get('/productions', (req, res)=> {
   const URL = 'http://localhost:5554/api/productions'
   axios.get(URL).then(resp => {
