@@ -2,7 +2,7 @@
 INSERT INTO actor
 (fName, lName)
 VALUES
-('alan','young'),
+('alan','young'), 
 ('wayne', 'allwine'),
 ('dick', 'billingsley'),
 ('will', 'ryan'),
