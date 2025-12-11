@@ -1,29 +1,29 @@
 <%- include('../partials/header') %>
 
-
 <main class="main" id="main">
     <div class="container">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
             <% data.forEach(item => { %>
                 <div class="col">
-                    <div class="card program-card">
-                        <img class="img-fluid card-img-top program-img" src="/images/<%= item.img %>" alt="image of <%= item.title %>" />
+                    <!-- build card in here... -->
+                    <div class="card">
                         <div class="card-body">
-                            <h2 class="card-title">
-                                <%= item.title %>
-                            </h2>
+                            <h3 class="card-title">
+                                <%= item.programs %>
+                            </h3>
                         </div>
                         <div class="card-footer">
-                            <a href="/programs/<%= item.program_id %>">
-                                view more
-                            </a>
+                            <p class="card-text">
+                                <a href="/programs/<%= item.programs %>" class="card-link">
+                                    view more
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
             <% }) %>
-        </div>
+       </div>
     </div>
 </main>
 
 <%- include('../partials/footer') %>
-

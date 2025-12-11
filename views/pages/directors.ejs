@@ -1,9 +1,30 @@
-<%= include('../partials/header') %>
+<%- include('../partials/header') %>
 
 <main class="main" id="main">
-    <div class="comtainer">
-        <h2>Director</h2>
-    </div>
+    <div class="container">
+        <!-- take each ** forEach ** director and make a card to display the information -->
+       <div class="row row-cols-1 row-cols-md-3 g-4">
+            <% data.forEach(item => { %>
+                <div class="col">
+                    <!-- build card in here... -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <%= item.director %>
+                            </h2>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text">
+                                <a href="/director/<%= item.director_id %>" class="card-link">
+                                    view more
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+       </div>
+    </div>  
 </main>
 
-<%= include('../partials/footer') %>
+<%- include('../partials/footer') %>

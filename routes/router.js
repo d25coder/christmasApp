@@ -88,10 +88,10 @@ router.get('/productions', (req, res)=> {
   })   
 })
 // Renders data from program.ejs
-router.get('/programs', (req, res)=> { //router.get('/programs) has to match the URL
+router.get('/programs', (req, res)=> { //router.get('/programs) has to match the URL link and the href in header.ejs
   const URL = 'http://localhost:5554/api/programs'
   axios.get(URL).then(resp => {
-    //console.log(resp.data) // check point
+    console.log(resp.data) // check point
     res.render('pages/program', { //res.render has to match .ejs file name and data
         title: 'programs',
         name: "Destinie's Christmas Programs",
@@ -101,7 +101,7 @@ router.get('/programs', (req, res)=> { //router.get('/programs) has to match the
   })   
 })
 router.get('/streaming_platforms', (req, res)=> {
-  const URL = 'http://localhost:5554/api/streaming_platforms'
+  const URL = 'http://localhost:5554/api/streaming_platform'
   axios.get(URL).then(resp => {
     res.render('pages/streaming_platforms', { 
         title: 'Streaming Platforms',
