@@ -9,12 +9,33 @@
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">
-                                <%= item.programs %>
+                                <%= item.title %> 
                             </h3>
+                            <ul class="program-list list-group list-group-flush">
+                                <li class="program-list-item list-group-item">
+                                    Year Released: <%= item.yr_released %>
+                                </li>
+                                <li class="program-list-item list-group-item">
+                                    Runtime: <%= item.runtime %>
+                                </li>
+                                <li class="program-list-item list-group-item">
+                                    Format: <%= item.format %>
+                                </li>
+                                <li class="program-list-item list-group-item">
+                                    Program Rating: <%= item.program_rating %>
+                                </li>
+                                <li class="program-list-item list-group-item">
+                                    Rating: <%= item.rating %>
+                                </li>
+                                <li class="program-list-item list-group-item">
+                                    Description: <%= item.description %>
+                                </li>
+                                <!-- all the li need to go inside the ul -->
+                            </ul>
                         </div>
                         <div class="card-footer">
                             <p class="card-text">
-                                <a href="/programs/<%= item.programs %>" class="card-link">
+                                <a href="/programs/<%= item.programs_id %>" class="card-link">
                                     view more
                                 </a>
                             </p>

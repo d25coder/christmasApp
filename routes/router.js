@@ -45,7 +45,7 @@ router.use('/api/streaming_platform', require('./api/streaming_platformRoutes'))
 router.get('/actors', (req, res)=> {
   const URL = 'http://localhost:5554/api/actors'
   axios.get(URL).then(resp => {
-    res.render('pages/actors', { 
+    res.render('pages/actors', { // connects to actor.ejs file
         title: 'actors',
         name: "Destinie's Christmas Actors",
         endpoint: 'actors',
