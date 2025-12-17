@@ -8,7 +8,7 @@ const actorDao = {
 // Q4. SEARCH actor by fName & lName starting with "d"
 // http://localhost:5554/api/actors/search?last_name=c&first_name=d
 //  or 
-// Search by lname      http://localhost:5554/api/actors/search?first_name=c
+// Search by fname      http://localhost:5554/api/actors/search?first_name=c
     search: (req, res, table)=> {
 
         let sql = ''

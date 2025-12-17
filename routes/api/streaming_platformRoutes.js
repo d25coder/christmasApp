@@ -10,7 +10,7 @@ const { streaming_platformDao: dao} = require('../../daos/dao')
 // http://localhost:5554/api/streaming_platform
 router.get('/', (req, res)=> {
     dao.findAll(res, dao.table)
-})
+}) 
 
 // Find Program By Streaming Platform
 // http://localhost:5554/api/streaming_platform/get_program/9

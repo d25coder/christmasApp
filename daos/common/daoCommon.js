@@ -57,7 +57,7 @@ const daoCommon = {
             }
         )
     },
-// Q3. SORT 
+// Q3. SORT  
     sort: (res, table, sorter)=> {
         connect.query(
             `SELECT * FROM ${table} ORDER BY ${sorter};`,

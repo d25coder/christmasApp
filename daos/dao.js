@@ -13,7 +13,7 @@ const directorDao = {
 const programDao = {
     ...daoCommon,
     ...require('./api/programDao')
-}
+} 
 
 const productionDao = {
     ...daoCommon,

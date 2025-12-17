@@ -12,7 +12,7 @@ router.get('/', (req, res)=> {
         title: 'actor-app home', 
         name: "Destinie's Christmas App" 
     })
-})
+}) 
 
 // ACTOR-FORM => http://localhost:5554/actor-form
 router.get('/actor-form', (req, res)=> {
@@ -42,6 +42,7 @@ router.use('/api/productions', require('./api/productionRoutes'))
 router.use('/api/streaming_platform', require('./api/streaming_platformRoutes'))
 
 
+// renders data from actor.ejs
 router.get('/actors', (req, res)=> {
   const URL = 'http://localhost:5554/api/actors'
   axios.get(URL).then(resp => {
@@ -52,11 +53,12 @@ router.get('/actors', (req, res)=> {
         data: resp.data 
     })
   })   
-})
+}) 
+// renders data from directors.ejs
 router.get('/directors', (req, res)=> {
   const URL = 'http://localhost:5554/api/directors'
   axios.get(URL).then(resp => {
-    res.render('pages/directors', { 
+    res.render('pages/directors', {  //connects to directors.ejs file
         title: 'directors',
         name: "Destinie's Christmas Directors",
         endpoint: 'directors',
@@ -67,7 +69,7 @@ router.get('/directors', (req, res)=> {
 router.get('/home', (req, res)=> {
   const URL = 'http://localhost:5554/api/home'
   axios.get(URL).then(resp => {
-    console.log(resp.data) // check point
+    // console.log(resp.data) // check point
     res.render('pages/home', { 
         title: 'home',
         name: "Destinie's Christmas Home Page",
@@ -91,7 +93,7 @@ router.get('/productions', (req, res)=> {
 router.get('/programs', (req, res)=> { //router.get('/programs) has to match the URL link and the href in header.ejs
   const URL = 'http://localhost:5554/api/programs'
   axios.get(URL).then(resp => {
-    console.log(resp.data) // check point
+    // console.log(resp.data) // check point
     res.render('pages/program', { //res.render has to match .ejs file name and data
         title: 'programs',
         name: "Destinie's Christmas Programs",
@@ -113,7 +115,7 @@ router.get('/streaming_platforms', (req, res)=> {
 })
 
 
-// ERROR HANDLER ROUTE
+// ERROR.ejs HANDLER ROUTE
 router.use((req, res, next)=> {
     res.status(404)
     .render('pages/error', {
