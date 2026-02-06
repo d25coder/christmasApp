@@ -16,7 +16,7 @@ const streaming_platformDao = {
                 queryAction(res, error, rows, table)
             }
         )
-    },   
+    },    
 // order streamPlat alphabetically
     orderBy: (res, table)=> {
         con.execute(
