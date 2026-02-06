@@ -4,7 +4,7 @@ const { queryAction } = require('../../helpers/queryAction')
 // Find Program By Director Id - v7
 const directorDao = {
     table: 'director', 
-
+ 
     findProgramsByDirector: (res, table, id)=> {
         const sql = `SELECT p.*, d.director 
                     FROM program p

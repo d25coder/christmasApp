@@ -9,8 +9,10 @@
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">
-                                <%= item.title %> 
-                            </h3>
+                                <%= item.title %>  
+                            </h3> 
+                            <% if (item.img_url) { %> 
+                            <img src="/image/program images/<%= item.img_url %>" alt="<%= item.title %>" class="img-fluid mb-2"> <% } %>
                             <ul class="program-list list-group list-group-flush">
                                 <li class="program-list-item list-group-item">
                                     Year Released: <%= item.yr_released %>
